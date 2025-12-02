@@ -1,66 +1,66 @@
-# 📝 TODO LIST APP
+# 📝 TodoList App
 
-Modern todo list application with PHP and MySQL.
+Aplikasi todo list modern dengan PHP dan MySQL. Kelola tugasmu dengan mudah!
 
-## 🚀 Installation Instructions
+![Screenshot 1](image/ss1.png)
+![Screenshot 2](image/ss2.png)
+![Screenshot 3](image/ss3.png)
+![Screenshot 4](image/ss4.png)
+![Screenshot 5](image/ss5.png)
 
-### 1. Import Database to phpMyAdmin
+## ✨ Fitur
 
-1. Open **phpMyAdmin**: `http://localhost/phpmyadmin`
-2. Click **"New"** in the left sidebar
-3. Create database with name: **`todolist_db`**
-4. Click on the new database
-5. Go to **"Import"** tab
-6. Click **"Choose File"** and select `database.sql`
-7. Click **"Go"** to import
+- ✅ **3 Tampilan Berbeda**: Sederhana, Papan (Kanban), dan Tabel
+- ✅ **Manajemen Todo**: Tambah, edit status, prioritas, dan hapus
+- ✅ **Drag & Drop**: Pindahkan todo antar kolom di papan
+- ✅ **Dark & Light Mode**: Pilih tema sesuai preferensimu
+- ✅ **Admin Dashboard**: Kelola semua user dan lihat statistik
+- ✅ **Keamanan**: Password terenkripsi dengan bcrypt
 
-### 2. Start XAMPP
+## 🚀 Cara Install
 
-- Start **Apache** (for PHP)
-- Start **MySQL** (for database)
+### 1. Import Database
 
-### 3. Access the App
+1. Buka **phpMyAdmin**: `http://localhost/phpmyadmin`
+2. Klik **"Import"** → Pilih file `database.sql`
+3. Klik **"Go"**
 
-Open browser and go to: **`http://localhost/todo-list/`**
+### 2. Jalankan XAMPP
 
-## 🔑 Login Credentials
+- Start **Apache**
+- Start **MySQL**
 
-**Admin Account:**
+### 3. Buka Aplikasi
+
+Browser: `http://localhost/todo-list/`
+
+## 🔑 Login
+
+**Admin:**
 - Username: `admin`
 - Password: `TomatoPotato01!`
+- Akses: `http://localhost/todo-list/admin.php`
 
-**Regular Users:**
-- Register from the landing page (username + password only)
+**User Biasa:**
+- Daftar dari halaman utama
 
-## ✨ Features
+## 📁 Struktur Database
 
-- ✅ User registration & login
-- ✅ Add, complete, and delete todos
-- ✅ **Board View** - Card layout (To Do / Doing / Done)
-- ✅ **Table View** - Spreadsheet layout
-- ✅ Secure password hashing
-- ✅ Dark theme with purple accents
+**Database:** `todolist_db`
 
-## 📁 Database Structure
+**Tabel:**
+- `users` - Data user (id, username, password, role)
+- `todos` - Data todo (id, user_id, title, status, priority, is_completed)
 
-**Database Name:** `todolist_db`
+## 🛠️ Troubleshooting
 
-**Tables:**
-- `users` - Stores user accounts (id, username, password, role)
-- `todos` - Stores todo items (id, user_id, title, status, priority, is_completed)
+**Error Koneksi:**
+- Pastikan MySQL berjalan di XAMPP
+- Cek nama database: `todolist_db`
 
-## 🎨 Design
+**Halaman Tidak Ditemukan:**
+- Folder harus bernama `todo-list` di dalam `xampp/htdocs/`
 
-- Black background (#000000)
-- Purple accent color (#7C3AED)
-- Notion-inspired card and table layout
-- Clean, modern interface
+---
 
-## 🐛 Troubleshooting
-
-**Connection Error:**
-- Make sure MySQL is running in XAMPP
-- Check database name is `todolist_db`
-
-**Page Not Found:**
-- Folder must be named `todo-list` inside `xampp/htdocs/`
+Made with PHP ❤️ by **Novandra Anugrah**

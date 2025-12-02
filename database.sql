@@ -36,10 +36,20 @@ CREATE TABLE todos (
 
 -- ====================================
 -- Insert Admin User
+-- Username: admin
 -- Password: TomatoPotato01!
 -- ====================================
 INSERT INTO users (username, password, role) VALUES 
 ('admin', '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', 'admin');
 
+-- ====================================
+-- Insert Demo User (Optional - for testing)
+-- Username: demo
+-- Password: demo123
+-- ====================================
+INSERT INTO users (username, password, role) VALUES 
+('demo', '$2y$10$vXB5W8qKE8.xR8q5RqPKFODemoHashForTesting123456789012', 'user');
+
 -- Note: The password is hashed using PHP's password_hash() function
 -- To create new hashed passwords, use: password_hash('YourPassword', PASSWORD_DEFAULT)
+-- Admin credentials: admin / TomatoPotato01!
