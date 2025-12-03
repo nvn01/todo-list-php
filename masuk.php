@@ -156,6 +156,35 @@
             border: 1px solid rgba(34, 197, 94, 0.3);
             text-align: center;
         }
+        
+        /* Responsive Design */
+        @media (max-width: 480px) {
+            .auth-container {
+                padding: 1rem;
+            }
+            
+            .auth-card {
+                padding: 2rem 1.5rem;
+            }
+            
+            .auth-header h1 {
+                font-size: 1.5rem;
+            }
+            
+            .auth-header p {
+                font-size: 0.875rem;
+            }
+            
+            .form-input {
+                padding: 0.75rem 0.875rem;
+                font-size: 0.9375rem;
+            }
+            
+            .btn-submit {
+                padding: 0.875rem;
+                font-size: 0.9375rem;
+            }
+        }
     </style>
 </head>
 <body data-theme="dark">

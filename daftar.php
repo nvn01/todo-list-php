@@ -80,18 +80,6 @@
         
         [data-theme="light"] .form-input:focus {
             background: white;
-        }
-        
-        .form-input::placeholder {
-            color: var(--text-tertiary);
-        }
-        
-        .btn-submit {
-            width: 100%;
-            background: var(--accent-primary);
-            border: none;
-            color: white;
-            padding: 1rem;
             border-radius: 0.875rem;
             font-weight: 600;
             font-size: 1rem;

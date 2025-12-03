@@ -541,6 +541,108 @@ $view = isset($_GET['view']) ? $_GET['view'] : 'simple';
             margin-bottom: 1rem;
             border: 1px solid rgba(34, 197, 94, 0.3);
         }
+        
+        /* ========== RESPONSIVE DESIGN ========== */
+        @media (max-width: 1024px) {
+            .board-view {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .dashboard {
+                padding: 1rem;
+            }
+            
+            .dashboard-header {
+                flex-direction: column;
+                gap: 1rem;
+                align-items: flex-start;
+            }
+            
+            .dashboard-title {
+                font-size: 1.5rem;
+            }
+            
+            .view-toggle {
+                width: 100%;
+                justify-content: center;
+            }
+            
+            .user-info {
+                width: 100%;
+                justify-content: space-between;
+            }
+            
+            .board-view {
+                grid-template-columns: 1fr;
+                gap: 1rem;
+            }
+            
+            .add-todo-form {
+                flex-direction: column;
+            }
+            
+            .todo-input {
+                width: 100%;
+            }
+            
+            .add-btn {
+                width: 100%;
+            }
+            
+            .todo-table {
+                font-size: 0.875rem;
+            }
+            
+            .todo-table th,
+            .todo-table td {
+                padding: 0.75rem 0.5rem;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .dashboard-title svg {
+                width: 24px;
+                height: 24px;
+            }
+            
+            .dashboard-title {
+                font-size: 1.25rem;
+            }
+            
+            .view-btn {
+                padding: 0.4rem 0.75rem;
+                font-size: 0.875rem;
+            }
+            
+            .username {
+                font-size: 0.875rem;
+            }
+            
+            .logout-btn {
+                padding: 0.4rem 0.875rem;
+                font-size: 0.875rem;
+            }
+            
+            .add-todo {
+                padding: 1rem;
+            }
+            
+            .todo-card {
+                padding: 0.75rem;
+            }
+            
+            .trash-btn {
+                font-size: 1.25rem;
+            }
+            
+            /* Hide some table columns on mobile */
+            .todo-table th:first-child,
+            .todo-table td:first-child {
+                display: none;
+            }
+        }
     </style>
 </head>
 <body data-theme="dark">

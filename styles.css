@@ -256,10 +256,17 @@ body {
     transform: rotate(-180deg) scale(0);
 }
 
-/* ========== RESPONSIVE ========== */
+/* ========== RESPONSIVE DESIGN ========== */
+
+/* Tablet and below */
 @media (max-width: 768px) {
     .hero-title {
         font-size: 2.5rem;
+        line-height: 1.2;
+    }
+
+    .hero-subtitle {
+        font-size: 1rem;
     }
 
     .navbar {
@@ -268,6 +275,16 @@ body {
 
     .nav-links {
         gap: 1rem;
+        font-size: 0.875rem;
+    }
+
+    .nav-link {
+        font-size: 0.875rem;
+    }
+
+    .btn-masuk {
+        padding: 0.4rem 1rem;
+        font-size: 0.875rem;
     }
 
     .carousel-slides {
@@ -279,8 +296,69 @@ body {
         max-height: 380px;
     }
 
-    .carousel-arrow {
-        font-size: 1.5rem;
+    .hero {
+        padding: 3rem 1.5rem 2rem;
+    }
+
+    .btn-primary {
+        padding: 0.75rem 1.5rem;
+        font-size: 0.9375rem;
+    }
+
+    .theme-toggle {
+        bottom: 1rem;
+        right: 1rem;
+        width: 48px;
+        height: 48px;
+    }
+
+    .footer {
         padding: 0.75rem 1rem;
+        font-size: 0.75rem;
+    }
+}
+
+/* Mobile phones */
+@media (max-width: 480px) {
+    .hero-title {
+        font-size: 2rem;
+    }
+
+    .hero-subtitle {
+        font-size: 0.9375rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .navbar {
+        padding: 1rem;
+    }
+
+    .nav-links {
+        gap: 0.5rem;
+    }
+
+    .nav-link {
+        display: none;
+        /* Hide nav links on very small screens */
+    }
+
+    .carousel-container {
+        margin-top: 2rem;
+    }
+
+    .carousel-slides {
+        min-height: 200px;
+        max-height: 300px;
+    }
+
+    .carousel-slide img {
+        max-height: 280px;
+    }
+
+    .theme-toggle {
+        width: 44px;
+        height: 44px;
+        bottom: 0.75rem;
+        right: 0.75rem;
     }
 }
