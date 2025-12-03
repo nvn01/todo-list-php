@@ -25,7 +25,7 @@
             </div>
             
             <div class="nav-links">
-                <a href="#dokumentasi" class="nav-link">Dokumentasi</a>
+                <a href="https://github.com/nvn01/todo-list-php" target="_blank" class="nav-link">Dokumentasi</a>
                 <a href="#beranda" class="nav-link">Beranda</a>
                 <button class="btn-masuk" onclick="window.location.href='masuk.php'">Masuk</button>
             </div>

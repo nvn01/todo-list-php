@@ -1,0 +1,33 @@
+# Ignore environment files
+.env
+
+# Ignore generated hash files
+generate-hash.php
+
+# Ignore Docker files
+docker-compose.yml
+Dockerfile
+.dockerignore
+
+# Ignore git
+.git
+
+# Ignore IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Ignore logs
+*.log
+
+# Ignore node modules (if you add npm in future)
+node_modules/
+
+# Ignore composer dependencies (if you add composer in future)
+vendor/
