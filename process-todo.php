@@ -37,8 +37,11 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             // If unchecking (not completed), set status to Belum
             $new_status = $new_completed ? 'Selesai' : 'Belum';
             
+            // Cast to integer for MySQL strict mode compatibility
+            $is_completed_int = $new_completed ? 1 : 0;
+            
             $stmt = $pdo->prepare("UPDATE todos SET is_completed = ?, status = ? WHERE id = ? AND user_id = ?");
-            $stmt->execute([$new_completed, $new_status, $todo_id, $user_id]);
+            $stmt->execute([$is_completed_int, $new_status, $todo_id, $user_id]);
         }
     }
     

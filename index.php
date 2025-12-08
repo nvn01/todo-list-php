@@ -45,10 +45,10 @@
                 <div class="carousel-slides">
                     <!-- Screenshots will be loaded here -->
                     <div class="carousel-slide active">
-                        <img src="screenshots/screenshot1.png" alt="TodoList Screenshot 1" onerror="this.src='screenshot-placeholder.png'">
+                        <img src="screenshots/screenshot1.webp" alt="TodoList Screenshot 1" onerror="this.src='screenshot-placeholder.png'">
                     </div>
                     <div class="carousel-slide">
-                        <img src="screenshots/screenshot2.png" alt="TodoList Screenshot 2" onerror="this.src='screenshot-placeholder.png'">
+                        <img src="screenshots/screenshot2.webp" alt="TodoList Screenshot 2" onerror="this.src='screenshot-placeholder.png'">
                     </div>
                 </div>
             </div>

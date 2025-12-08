@@ -110,17 +110,20 @@
         .auth-footer {
             text-align: center;
             margin-top: 1.5rem;
-            color: var(--text-secondary);
+            color: #A0A0A0;
+            font-size: 0.9375rem;
         }
         
         .auth-footer a {
-            color: var(--accent-primary);
+            color: #7C3AED;
             text-decoration: none;
             font-weight: 600;
+            transition: color 0.2s ease;
         }
         
         .auth-footer a:hover {
             text-decoration: underline;
+            color: #6D28D9;
         }
         
         .back-link {
