@@ -80,6 +80,14 @@
         
         [data-theme="light"] .form-input:focus {
             background: white;
+        }
+        
+        .btn-submit {
+            width: 100%;
+            background: #7C3AED;
+            border: none;
+            color: white;
+            padding: 1rem;
             border-radius: 0.875rem;
             font-weight: 600;
             font-size: 1rem;
@@ -90,7 +98,7 @@
         }
         
         .btn-submit:hover {
-            background: var(--accent-hover);
+            background: #6D28D9;
             transform: translateY(-2px);
             box-shadow: 0 15px 40px rgba(124, 58, 237, 0.5);
         }
